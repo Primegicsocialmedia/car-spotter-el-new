@@ -1,10 +1,12 @@
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { StatusBar } from "expo-status-bar";
 
 export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
+        headerShown: false,
         tabBarActiveTintColor: "#ffd33d",
         headerStyle: {
           backgroundColor: "#25292e",
@@ -12,7 +14,9 @@ export default function TabsLayout() {
         headerShadowVisible: false,
         headerTintColor: "#fff",
         tabBarStyle: {
-          backgroundColor: "#25292e",
+          backgroundColor: "#161622",
+          borderTopWidth: 1,
+          borderTopColor: "#232533",
         },
       }}
     >
@@ -44,6 +48,7 @@ export default function TabsLayout() {
           ),
         }}
       />
+      <StatusBar style="dark" />
     </Tabs>
   );
 }

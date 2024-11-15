@@ -1,10 +1,11 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
+import Header from "../../components/Home/Header";
 
 const Home = () => {
   return (
-    <View className="flex-1 justify-center items-center bg-[#25292e]">
-      <Text className="text-white text-4xl font-bold">Home</Text>
+    <View>
+      <Header/>
     </View>
   );
 };
