@@ -19,7 +19,7 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="home"
         options={{
-          headerTitle: "Prime",
+          
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}
@@ -32,7 +32,7 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="about"
         options={{
-          headerTitle: "About",
+         
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={
