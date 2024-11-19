@@ -2,9 +2,9 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 import { TouchableOpacity } from "react-native";
 
-const CategoryItem = ({ category }) => {
+const CategoryItem = ({ category,onCategoryPress }) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={()=>onCategoryPress(category)} >
       <View className="p-3 rounded-full mr-3 bg-secondary">
         <Image source={{ uri: category.icon }} className="w-[40] h-[40]" />
       </View>
