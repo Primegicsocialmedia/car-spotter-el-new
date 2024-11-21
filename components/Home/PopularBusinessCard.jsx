@@ -6,7 +6,7 @@ const PopularBusinessCard = ({ business }) => {
   return (
     <TouchableOpacity
       className="ml-5 p-5 bg-white rounded-2xl"
-    
+      onPress={() => router.push("/businessdetail/" + business?.id)}
     >
       <Image
         source={{ uri: business.imageUrl }}s
